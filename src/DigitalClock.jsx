@@ -24,11 +24,11 @@ function DigitalClock(){
 
         hour= hour%12 || 12;
 
-        return `${padZero(hour)}:${padZero(min)}:${padZero(sec)} ${meridium}`
+        return `${padZero(hour)}:${padZero(min)}:${padZero(sec)} ${meridium}`;
     }
 
     function padZero(number){
-        return (number < 10? "0":"") +number
+        return (number < 10? "0":"") +number;
     }
     return(
         <div className="container">
